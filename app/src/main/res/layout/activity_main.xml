@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context="MainActivity"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/edt_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="edit your number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_number"
+        android:layout_alignStart="@id/edt_number"
+        android:layout_alignEnd="@id/edt_number"
+        android:text="call" />
+    <Button
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_call"
+        android:layout_alignStart="@id/btn_call"
+        android:layout_alignEnd="@id/btn_call"
+        android:text="back" />
+</RelativeLayout>
